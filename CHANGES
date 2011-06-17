@@ -1,0 +1,4 @@
+v 0.1.0
+===============================
+* Added a sanity check and fixed a bug where text nodes caused massive fail
+* Gemified source from https://github.com/kourge/ayril

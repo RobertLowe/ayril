@@ -1,6 +1,3 @@
-#!/usr/local/bin/macruby
+require File.dirname(__FILE__) + '/../lib/ayril'
 
-require '../core-extensions'
-require '../ayril/selector'
-
-puts Selector.new($*[0]).xpath
+puts Ayril::Selector.new($*[0]).xpath

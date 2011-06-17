@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    ayril (1.0.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    MacSpec (0.4.5)
+    rake (0.9.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  MacSpec (~> 0.4.5)
+  ayril!
+  bundler (~> 1.0.0)
+  rake

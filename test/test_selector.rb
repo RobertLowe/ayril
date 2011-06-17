@@ -1,5 +1,3 @@
-#!/usr/local/bin/macruby
-
 def run(a)
   IO.popen(a).read
 end
@@ -55,7 +53,7 @@ EOF
 selectors = selectors.split /\n/
 VERBOSE = ARGV[0] == "--verbose"
 
-path = File.expand_path '.'
+path = File.expand_path './test/'
 js = File.join(path, "invoke_prototype_selector.js")
 rb = File.join(path, "invoke_ayril_selector.rb")
 
@@ -71,9 +69,10 @@ selectors.each do |test|
   
   passed = (reference == resulting)
   if passed
-    puts "#{GREEN}PASS#{NORMAL} ``#{test}\"" +
-        (passed && VERBOSE ? "\n   #{BLUE}#{resulting}#{NORMAL}" : '')
+    puts "#{GREEN}PASS#{NORMAL} \"#{test}\"" +
+        (passed && VERBOSE ? "\n   JS: #{BLUE}#{reference}#{NORMAL}" : '') + 
+        (passed && VERBOSE ? "\n   RB: #{BLUE}#{resulting}#{NORMAL}" : '')
   else
-    puts "#{RED}FAIL#{NORMAL} ``#{test}\"#{detail}" + (VERBOSE ? '\n' : '')
+    puts "#{RED}FAIL#{NORMAL} \"#{test}\"#{detail}" + (VERBOSE ? '\n' : '')
   end
 end
