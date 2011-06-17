@@ -46,10 +46,3 @@ module Ayril
   end
 end
 
-# require 'ayril/node-manipulation'
-# require 'ayril/element-manipulation'
-# require 'ayril/element-attribute-manipulation'
-
-# require 'ayril/selector'
-# require 'ayril/node-traversal'
-
