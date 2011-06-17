@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "#{Ayril::Version::STRING}"
   s.authors = ["Wilson Lee", "Rob Lowe"]
   s.date = %q{2011-06-16}
-  s.description = %q{An XML library for MacRuby that is built on top of Cocoa NSXML classes.}
-  s.email = %q{kourge@gmail.com rob@iblargz.com}
+  s.description = %q{An XML library for MacRuby that is built on top of Cocoa NSXML classes}
+  s.email = ['kourge@gmail.com', 'rob@iblargz.com']
   s.extra_rdoc_files = [
     "LICENSE",
     "CHANGES",
@@ -48,7 +48,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.4.2}
-  s.summary = %q{An XML library for MacRuby that is built on top of Cocoa NSXML classes.}
+  s.summary = %q{An XML library for MacRuby built on top of Cocoa NSXML classes}
   s.add_development_dependency(%q<rake>, [">= 0"])
   s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
   s.add_development_dependency(%q<MacSpec>, ["~> 0.4.5"])
