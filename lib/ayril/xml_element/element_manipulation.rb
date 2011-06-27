@@ -76,7 +76,7 @@ module Ayril
         return id unless id.nil?
         begin
           id = "anonymous_element_#{XMLElement::id_counter += 1}"
-        end while self.rootDocument.select("##{id}").any?
+        end while !self.rootDocument.select("##{id}").empty?
         self.write_attribute "id", id
         id
       end

@@ -35,7 +35,6 @@ end
 
 
 class Array
-  def any?; not self.empty? end
   def invoke(*args) self.map { |item| item.send *args } end
   def invoke!(*args) self.map! { |item| item.send *args } end
 

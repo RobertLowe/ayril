@@ -46,6 +46,7 @@ module Ayril
     end
 
     forward :to_s, :XMLString
+    forward :root, :rootElement
 
     def inspect
       "#<#{self.class}:0x#{self.object_id.to_s(16)}>"

@@ -1,3 +1,9 @@
+v 0.1.2
+===============================
+* Removed core_ext any? (compatibility with sequel gem)
+* Added test_append
+* Added forward :root, :rootElement for XMLDocument (like REXML)
+
 v 0.1.0
 ===============================
 * Added a sanity check and fixed a bug where text nodes caused massive fail
